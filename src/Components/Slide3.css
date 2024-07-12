@@ -1,0 +1,41 @@
+.flex1{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+}
+.bordered{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInFromTop 2s ease-in-out forwards;
+    opacity: 0; /* Ensure elements are hidden initially */
+}
+
+.slide-in-1 {
+    animation-delay: 0s;
+}
+
+
+
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover {
+    margin-top: 40px !important;
+transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

@@ -1,0 +1,136 @@
+body{
+  background-color: none;
+}
+
+.position-relative {
+    position: relative;
+  }
+  
+  .star-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Prevents interference with the image */
+  }
+  
+  .star {
+    position: absolute;
+    width: 3px; /* Adjusted size */
+    height: 3px; /* Adjusted size */
+    background: white;
+    border-radius: 50%; /* Ensures the stars are perfectly round */
+    opacity: 0.8;
+    animation: moveStars 10s linear infinite;
+  }
+  
+  .star1 {
+    top: 90%;
+    right: 40%;
+    animation-duration: 5s;
+  }
+  
+  .star2 {
+    top: 90%;
+    left: 30%;
+    animation-duration: 3s;
+  }
+  
+  .star3 {
+    top: 70%;
+    left: 10%;
+    animation-duration: 6s;
+  }
+  
+  .star4 {
+    top: 70%;
+    left: 50%;
+    animation-duration: 4s;
+  }
+  
+  .star5 {
+    top: 60%;
+    left: 40%;
+    animation-duration: 4s;
+  }
+  
+  .star6 {
+    top:  50%;
+    left: 50%;
+    animation-duration: 7s;
+  }
+  
+  .star7 {
+    top: 50%;
+    left: 50%;
+    animation-duration: 6s;
+  }
+  
+  .star8 {
+    top: 40%;
+    left: 40%;
+    animation-duration: 7s;
+  }
+
+  .star9 {
+    top: 40%;
+    left: 80%;
+    animation-duration: 3s;
+  }
+  
+  .star10 {
+    top: 70%;
+    right: 10%;
+    animation-duration: 6s;
+  }
+  
+  .star11 {
+    top: 80%;
+    right: 10%;
+    animation-duration: 4s;
+  }
+
+  .star12 {
+    top: 70%;
+    right: 30%;
+    animation-duration: 6s;
+  }
+  
+  .star13 {
+    top: 20%;
+    left: 60%;
+    animation-duration: 3s;
+  }
+  
+  .star14 {
+    top: 30%;
+    left: 60%;
+    animation-duration: 9s;
+  }
+
+  .star15 {
+    top: 92%;
+    left: 20%;
+    animation-duration: 7s;
+  }
+  
+  .star16 {
+    bottom: 70%;
+    left: 90%;
+    animation-duration: 6s;
+  }
+  
+  @keyframes moveStars {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(50px, 50px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
